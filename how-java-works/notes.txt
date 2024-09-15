@@ -1,0 +1,13 @@
+Java Code in platform independent its just needs JVM
+
+JVM itself is platform dependent, you cannot run it on IOS
+
+JVM only understands byte Code
+
+Java Code => Byte Code using Javac => Goes to JVM
+
+For JavaC to compile your code it must have main method
+
+Java Runtime Environment
+
+As developer you will be installing JDK which has JRE which has JVM
