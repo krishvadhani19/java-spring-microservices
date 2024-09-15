@@ -1,0 +1,5 @@
+Primitive data types:
+1. Integer => byte, short, int , long
+2. Float => float, double
+3. Character
+4. Boolean
