@@ -1,9 +1,14 @@
 
 class Calculator {
 
+    private String sexy(int num1) {
+        return num1 + "Sexy";
+    }
+
     public int add(int num1, int num2) {
         int ans = num1 + num2;
 
+        System.out.println(this.sexy(num1));
         return ans;
     }
 }
