@@ -1,0 +1,12 @@
+JDK - Java Development Kit
+Your java code is compiled to byte code using JDK
+JDK is the superset of JRE
+
+JVM - Java Virtual Machine
+Your byte code runs on JVM
+
+JRE - Java Runtime Environment
+You will need to use some in built libraries which is offered by Java Runtime Environment
+JRE is the superset of JVM
+
+JDK => JRE => JVM
