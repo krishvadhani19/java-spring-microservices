@@ -1,0 +1,4 @@
+Drawbacks of using Array:
+
+1. Define the size of the array while initializing
+2. For searching you gotta traverse the array
