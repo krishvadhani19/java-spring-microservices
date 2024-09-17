@@ -32,10 +32,10 @@ public class ArrayOfObjects {
         students[1] = s2;
         students[2] = s3;
 
-        for (int i = 0; i < students.length; i++) {
-            System.out.println("Name:" + students[i].name);
-            System.out.println("Marks:" + students[i].marks);
-            System.out.println("RollNo:" + students[i].rollNo);
+        for (Student CurrentStudent: students) {
+            System.out.println("Name:" + CurrentStudent.name);
+            System.out.println("Marks:" + CurrentStudent.marks);
+            System.out.println("RollNo:" + CurrentStudent.rollNo);
             System.out.println("");
         }
     }
