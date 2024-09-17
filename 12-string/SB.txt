@@ -1,0 +1,17 @@
+In Java, String and StringBuffer are both used to work with strings, but they have key differences in terms of mutability, thread safety, and performance:
+
+1. Mutability:
+String: Immutable. Once a String object is created, its value cannot be changed. Any modification (like concatenation) results in the creation of a new String object, which can be inefficient in scenarios with frequent string manipulation.
+StringBuffer: Mutable. It allows modifications to the string it holds without creating a new object, which makes it more efficient for scenarios involving lots of changes.
+
+2. Thread Safety:
+String: As it is immutable, it is inherently thread-safe. Multiple threads can access the same String object without worrying about synchronization issues.
+StringBuffer: Thread-safe. Methods of StringBuffer are synchronized, meaning that it is safe to use in a multi-threaded environment without causing thread interference.
+
+3. Performance:
+String: Slower for repeated modifications because each change results in the creation of a new object.
+StringBuffer: Faster for scenarios where frequent modifications are needed, especially in a single-threaded environment, because it modifies the existing object.
+
+4. Use Case:
+String: Use when the string content will not change, or when only a few modifications are required.
+StringBuffer: Use when you need to frequently modify a string in a thread-safe manner.
