@@ -1,0 +1,15 @@
+In Java, the static keyword is used for methods (and fields) to indicate that they belong to the class itself rather than to any specific instance of the class.
+Here's why this matters:
+
+1. Shared Across Instances: A static method or field is shared across all instances of a class. 
+This means that no matter how many objects of the class are created, there's only one copy of the static method or field.
+
+2 No Object Required: You can call a static method directly using the class name without creating an object. 
+
+3. Memory Efficiency: Since a static method or field is initialized once and shared, it can help save memory. Instead of each object having its own copy of the method, there's only one copy in the method area of the JVM.
+
+This is particularly useful for utility functions or constants that don't require object-level data, such as methods in the Math class like Math.sqrt() or Math.pow().
+
+***However, keep in mind:
+Cannot Access Instance Variables Directly: A static method cannot access instance (non-static) variables or methods directly because it doesn't belong to any specific object. 
+To access instance data, you need to create an instance of the class.
