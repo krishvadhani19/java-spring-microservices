@@ -8,11 +8,31 @@ class Human {
         System.out.println("In static block");
     }
 
+    // Default constructor
+    public Human() {
+        System.out.println("In default constructor");
+        this.age = 23;
+        this.name = "Krish Beautiful";
+    }
+
+    // Parameterized constructor
     // Don't assign values while initializing variables, rather do it in constructor for code maintenance
     public Human(String name, int age) {
+        System.out.println("In constructor");
         this.name = name;
         this.age = age;
-        System.out.println("In constructor");
+    }
+
+    // Type 1 parameterized constructor
+    public Human(String name) {
+        this.age = 111;
+        this.name = name;
+    }
+
+    // Type 2 parameterized constructor
+    public Human(int age) {
+        this.age = age;
+        this.name = "Krish Age Constructor";
     }
 
     public void setAge(int newAge) {
@@ -51,5 +71,11 @@ class Intro {
         Human h2 = new Human("Krish Hero 19", 88);
         h2.show();
 
+        System.out.println();
+        Human h3 = new Human();
+        h3.show();
+    }
+
+    public Intro() {
     }
 }
