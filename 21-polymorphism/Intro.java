@@ -24,6 +24,7 @@ class B extends A {
 
 class C extends A {
 
+    @Override
     public void show() {
         System.out.println("Inside show of C");
     }
