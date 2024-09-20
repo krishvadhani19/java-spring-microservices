@@ -10,23 +10,28 @@ abstract class Car {
     }
 }
 
-class WagonR extends Car {
-
-    @Override
-    public void drive() {
-        System.out.println("Inside drive method in WagonR which extends Car");
-    }
+abstract class WagonR extends Car {
 
     @Override
     public void fly() {
         System.out.println("Inside fly method in WagonR which extends Car");
+    }
+
+    // public abstract void hello();
+}
+
+class WagonRC extends WagonR {
+
+    @Override
+    public void drive() {
+        System.out.println("Inside drive method in WagonR which extends Car");
     }
 }
 
 public class Demo {
 
     public static void main(String[] args) {
-        Car obj = new WagonR();
+        Car obj = new WagonRC();
         obj.playMusic();
         obj.drive();
         obj.fly();
