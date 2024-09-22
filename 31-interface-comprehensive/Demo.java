@@ -68,5 +68,4 @@ public class Demo {
   * 4. Default Methods: Java 8 introduced default methods in interfaces. A default method has a body, and implementing classes are not required to override it unless they want to change its behavior.
   * 5. Static Methods: Interfaces can also have static methods, which can be called on the interface itself.
   * 6. Variables in Interfaces: All variables declared in an interface are implicitly public, static, and final, meaning they are constants.
-  * 
  */
